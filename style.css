@@ -226,24 +226,89 @@ section h2 {
 }
 
 /* ─── ABOUT ─────────────────────────────────────────────────────────
-   Simple text section with a light background */
+   Premium about section — pull quote, body copy, stats row.
+   Light warm background — breathes between the dark hero and skills. */
 #about {
-  background: var(--light);
+  background: #fafaf8;         /* warm off white — not clinical */
   max-width: 100%;
-  padding: 80px;
+  padding: 100px 80px;
 }
 
-#about h2 {
-  max-width: 1000px;
-  margin: 0 auto 24px;
-}
-
-#about p {
-  max-width: 1000px;
+.about-container {
+  max-width: 900px;
   margin: 0 auto;
-  font-size: 1.05rem;
-  color: var(--text-muted);
+}
+
+/* small uppercase tag above the quote */
+.about-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c9a84c;              /* gold */
+  margin-bottom: 24px;
+}
+
+/* pull quote — premium executive feel */
+.about-quote {
+  font-family: 'Georgia', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--dark);
+  border: none;
+  padding: 0 0 40px 0;
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid #e8e0d0;
+  font-style: italic;
+}
+
+/* body paragraphs — stronger, more readable */
+.about-body p {
+  font-size: 1rem;
+  color: #2d3748;              /* darker — confident not faint */
   line-height: 1.9;
+  margin-bottom: 20px;
+  max-width: 800px;
+  font-weight: 400;
+}
+
+/* stats row */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 60px;
+  padding-top: 48px;
+  border-top: 1px solid #e8e0d0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-number {
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* gold accent on number on hover */
+.stat:hover .stat-number {
+  color: #c9a84c;
+  transition: color 0.3s ease;
 }
 
 /* ─── SKILLS ────────────────────────────────────────────────────────
