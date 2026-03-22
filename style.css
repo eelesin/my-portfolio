@@ -31,18 +31,59 @@ body {
 }
 
 /* ─── NAVIGATION ────────────────────────────────────────────────────
-   Fixed bar at the top — stays visible as you scroll */
+   Fixed executive bar — clean, precise, commands attention.
+   Shadow gives depth — feels premium not flat. */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: var(--white);
-  border-bottom: 1px solid #dfe1e6;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid #e8e0d0;    /* warm gold tinted border */
   padding: 16px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;  /* sits on top of everything else */
+  z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);  /* subtle depth */
+  backdrop-filter: blur(10px);          /* frosted glass effect */
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.2s;
+}
+
+/* gold underline slides in on hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #c9a84c;
+  transition: width 0.6s ease;
+}
+
+.nav-links a:hover {
+  color: var(--dark);
+}
+
+.nav-links a:hover::after {
+  width: 100%;                /* gold line slides across on hover */
 }
 
 /* ─── LOGO ──────────────────────────────────────────────────────────
