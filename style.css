@@ -113,16 +113,40 @@ section h2 {
 }
 
 /* ─── HERO ──────────────────────────────────────────────────────────
-   Full screen opening section — name, title, tagline */
+   Full screen opening — gradient from deep navy to rich dark blue
+   Gold accent on the title — confident, executive, precise */
 #hero {
-  min-height: 100vh;          /* full screen height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--dark);
+  background: linear-gradient(
+    135deg,
+    #0a0e1a 0%,      /* almost black navy */
+    #172b4d 50%,     /* deep navy */
+    #0d2137 100%     /* rich dark blue */
+  );
   color: var(--white);
   max-width: 100%;
   padding: 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle gold accent line on the left edge */
+#hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  height: 70%;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #c9a84c,         /* gold */
+    transparent
+  );
 }
 
 #hero h1 {
@@ -130,21 +154,34 @@ section h2 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 16px;
+  font-family: 'Georgia', serif;  /* serif = executive weight */
+  letter-spacing: 1px;
+}
+
+/* gold accent on first name */
+#hero h1 span {
+  color: #c9a84c;
 }
 
 #hero h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 400;
-  color: var(--accent);
+  color: #a0aec0;
   border: none;
   padding: 0;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
 }
 
 #hero p {
-  font-size: 1.1rem;
-  color: #a0aec0;
-  max-width: 500px;
+  font-size: 1rem;
+  color: #718096;
+  max-width: 480px;
+  line-height: 1.9;
+  border-left: 2px solid #c9a84c;  /* gold left border */
+  padding-left: 20px;
 }
 
 /* ─── ABOUT ─────────────────────────────────────────────────────────
