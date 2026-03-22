@@ -91,26 +91,120 @@
 
    <!-- PROJECTS -->
   <section id="projects">
-    <h2>Projects</h2>
+    <div class="projects-container">
 
-    <div class="project-card">
-      <h3>Jira Cloud Dashboard</h3>
-      <p>Built a full stack Jira dashboard using Node.js and Express, connected to the Jira REST API and deployed to Azure App Service with GitHub Actions CI/CD.</p>
-      <a href="https://github.com/eelesin/jira-integration-azure" target="_blank">View on GitHub</a>
+      <div class="projects-tag">Selected Work</div>
+      <h2>Projects</h2>
+      <p class="projects-subheading">Enterprise initiatives delivered with ownership, precision and measurable impact.</p>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">Riot Games</span>
+            <span class="project-year">2022</span>
+          </div>
+          <h3>Server to Cloud Migration</h3>
+          <p>Led the end to end Atlassian Server to Cloud migration for 25,000 enterprise users. Owned data integrity validation, application compatibility analysis, Atlassian Guard policy deployment and post migration optimisation. Delivered on time with zero data loss.</p>
+          <div class="project-tags">
+            <span>Atlassian Cloud</span>
+            <span>Atlassian Guard</span>
+            <span>Migration</span>
+            <span>25,000 Users</span>
+          </div>
+          <div class="project-impact">40% reduction in change approval cycle time post migration</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">Riot Games</span>
+            <span class="project-year">2021</span>
+          </div>
+          <h3>ServiceNow to Jira Incident Bridge</h3>
+          <p>Designed and built a Python automation that intercepted high severity game outage incidents from ServiceNow, mapped and replicated ticket details into Jira Data Center with normalised field mapping, then triggered a custom Slack bot webhook to notify the engineering team instantly with full incident context.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>ServiceNow</span>
+            <span>Jira</span>
+            <span>Slack Bot</span>
+            <span>REST API</span>
+          </div>
+          <div class="project-impact">Engineering team notified in seconds with zero manual bridging</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">HITRUST</span>
+            <span class="project-year">2023</span>
+          </div>
+          <h3>JSM Enterprise Implementation</h3>
+          <p>Designed and deployed Jira Service Management across 40 cross functional teams spanning HR, Finance, IT, Legal and Security. Collaborated closely with the PMO and senior stakeholders to establish governance frameworks, SLA standards, escalation paths and best practices that aligned with HITRUST compliance requirements.</p>
+          <div class="project-tags">
+            <span>Jira Service Management</span>
+            <span>Governance</span>
+            <span>PMO</span>
+            <span>Stakeholder Management</span>
+            <span>HITRUST</span>
+          </div>
+          <div class="project-impact">35% reduction in ticket lead time across 40 teams</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">HITRUST</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3>Azure Monitor to JSM Incident Pipeline</h3>
+          <p>Engineered an automated incident communication pipeline connecting Azure Monitor to Jira Service Management. When infrastructure anomalies were detected alerts fired automatically, creating JSM incidents with enriched context and routing notifications to the correct Microsoft Teams channels based on incident priority level.</p>
+          <div class="project-tags">
+            <span>Azure Monitor</span>
+            <span>Jira Service Management</span>
+            <span>Microsoft Teams</span>
+            <span>Webhook</span>
+            <span>Automation</span>
+          </div>
+          <div class="project-impact">Incident response time reduced from 30 minutes to under 60 seconds</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">HITRUST</span>
+            <span class="project-year">2024</span>
+          </div>
+          <h3>Wiz Vulnerability Management Pipeline</h3>
+          <p>Built a full vulnerability management pipeline integrating Wiz, Jira Service Management, Confluence and SharePoint through Power Automate. Every scan finding was automatically ticketed with AI enriched remediation guidance, tracked against compliance SLA timelines and documented end to end — creating a fully auditable vulnerability lifecycle with zero manual documentation.</p>
+          <div class="project-tags">
+            <span>Wiz</span>
+            <span>Power Automate</span>
+            <span>JSM</span>
+            <span>Confluence</span>
+            <span>SharePoint</span>
+            <span>Compliance</span>
+          </div>
+          <div class="project-impact">Zero manual documentation — complete audit trail created automatically</div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-meta">
+            <span class="project-company">Personal Project</span>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Jira Cloud Dashboard</h3>
+          <p>Built a full stack Jira dashboard application from scratch using Node.js and Express, connected directly to the Jira Cloud REST API. Deployed to Azure App Service with a GitHub Actions CI/CD pipeline — every push to main deploys automatically in under 35 seconds. Includes JQL search, project filtering, issue tracking and a live connection status indicator.</p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Jira REST API</span>
+            <span>Azure App Service</span>
+            <span>GitHub Actions</span>
+          </div>
+          <div class="project-impact">
+            <a href="https://github.com/eelesin/jira-integration-azure" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+
+      </div>
     </div>
-
-    <div class="project-card">
-      <h3>Azure Incident Automation</h3>
-      <p>Built an automated incident pipeline — Azure Monitor fires an alert, a webhook creates a Jira incident automatically with correct priority and routing. Zero human involvement.</p>
-      <a href="https://github.com/eelesin/jira-integration-azure" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Wiz Vulnerability Pipeline</h3>
-      <p>Built a full vulnerability management pipeline integrating Wiz, Jira Service Management, Confluence and SharePoint through Power Automate with automated SLA tracking.</p>
-      <a href="#" target="_blank">View on GitHub</a>
-    </div>
-
   </section>
 
   <!-- CONTACT -->
