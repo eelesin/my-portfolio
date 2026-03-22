@@ -45,12 +45,37 @@ nav {
   z-index: 100;  /* sits on top of everything else */
 }
 
-/* Logo initials on the left */
+/* ─── LOGO ──────────────────────────────────────────────────────────
+   Executive monogram — confidence, precision, leadership */
 .nav-logo {
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: var(--dark);
+  color: #c9a84c;           /* gold monogram */
+  font-size: 0.95rem;
   font-weight: 700;
-  color: var(--primary);
+  letter-spacing: 3px;
+  border: 1.5px solid #c9a84c;  /* gold border */
+  font-family: 'Georgia', serif; /* serif = executive feel */
+}
+
+.logo-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--dark);
   letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
 }
 
 /* Navigation links on the right */
